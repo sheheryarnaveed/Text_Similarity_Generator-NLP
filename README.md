@@ -14,8 +14,8 @@ Required:
     
 Optional:
 	-c Path to the file containing chinese text
-    -e Path to the file containing english text. Default filename is enquiries_dataset_english.csv
-    -s A target score that determines how much similarity you want between texts. Default value is 1.0
+    	-e Path to the file containing english text. Default filename is enquiries_dataset_english.csv
+    	-s A target score that determines how much similarity you want between texts. Default value is 1.0
     
 	-h Help
 
