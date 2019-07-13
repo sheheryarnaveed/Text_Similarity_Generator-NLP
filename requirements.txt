@@ -1,0 +1,5 @@
+scipy
+numpy
+-U scikit-learn
+pandas
+mtranslate
