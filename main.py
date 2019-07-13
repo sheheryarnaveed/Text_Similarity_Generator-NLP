@@ -36,7 +36,7 @@ if(args.cfile):
                 translated_text = translate(deEmojify(row['Enquiry']), "en", "auto")
             similarity = cosine_sim(translated_text, query)
             if(similarity > float(args.targetscore)):
-                print(similarity, " => " , translated_text)
+                print(index+2, " , ", similarity, " => " , translated_text)
     except:
         print("Sorry, something went wrong while generating scores from csv file %(filename)s!" % {"filename" : args.cfile})
 else:
