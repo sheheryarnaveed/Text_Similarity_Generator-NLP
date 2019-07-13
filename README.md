@@ -21,3 +21,8 @@ Optional:
 
 ```
 
+For example the following commands would work:
+
+`python main.py -s 1.5 -q October` => where the targetScore = "1.5" and query="October"
+`python main.py -s 6.5 -q Hello -c enquiry_similarity_set.csv` => where the targetScore = "6.5" and query="October" and Chinese text file = "enquiry_similarity_set.csv"
+`python main.py -s 2.8 -q "How are you?" -e enquiries_dataset_english.csv` => where the targetScore = "2.8" and query="How are you?" and English text file = "enquiries_dataset_englisht.csv"
