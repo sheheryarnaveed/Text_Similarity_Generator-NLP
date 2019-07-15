@@ -1,5 +1,5 @@
 scipy
 numpy
--U scikit-learn
+scikit-learn
 pandas
 mtranslate
