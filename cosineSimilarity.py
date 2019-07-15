@@ -2,7 +2,7 @@ import nltk, string
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-# nltk.download('punkt')
+nltk.download('punkt')
 stemmer = nltk.stem.porter.PorterStemmer()
 remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
 
@@ -15,5 +15,10 @@ def normalize(text):
 vectorizer = TfidfVectorizer(tokenizer=normalize, stop_words='english')
 
 def cosine_sim(text1, text2):
-    tfidf = vectorizer.fit_transform([text1, text2])
-    return ((tfidf * tfidf.T).A)[0,1]
+    try:
+        tfidf = vectorizer.fit_transform([text1, text2])
+        return ((tfidf * tfidf.T).A)[0, 1]
+    # Just in case the string contains all stop words then we return zero similarity
+    # because fit_transform gives an exception on dealing with empty string due to removal of stop words
+    except:
+        return 0.0
