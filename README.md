@@ -29,10 +29,10 @@ Optional:
 
 ## Output
 #### Input file has English text
-- `41  ,  0.5797386715376657  =>  Will there be a lecture in October?` where 41 is the row number in csv file and ~0.58 is similarity confidence score and "Will there be a lecture in October?" is the text found similar to the given test enquiry.
+- `41  ,  0.5797386715376657  =>  Will there be a lecture in October?` where 41 is the row number in csv file and ~0.58 is similarity confidence score and "Will there be a lecture in October?" is the text found similar to the given test enquiry i.e. "October" in this case.
 
 #### Input file has Chinese text
-- `41  ,  0.5797386715376657  =>  請問十月還會有講座嗎` where 41 is the row number in csv file and ~0.58 is similarity confidence score and "請問十月還會有講座嗎" is the text found similar to the given test enquiry.
+- `41  ,  0.5797386715376657  =>  請問十月還會有講座嗎` where 41 is the row number in csv file and ~0.58 is similarity confidence score and "請問十月還會有講座嗎" is the text found similar to the given test enquiry i.e. "October" in this case.
 
 <strong> Note: </strong> <em>If providing a chinese text document, it may take a while to process because of translation but english version should run pretty fast.</em>
 
