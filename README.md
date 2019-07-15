@@ -3,7 +3,7 @@ A text similarity generator tool that generates similarity score between two tex
 
 ## Usage
 - Clone the git repository
-- Create a virtual env and install the required packages in requirements.txt `pip install -r requirements.txt`
+- Create a virtual env and install the required packages in requirements.txt `pip install -U -r requirements.txt `
 
 ## Terminal
 ```
